@@ -57,6 +57,7 @@ venv_versions:
 # fine grained settings
 ##
 base_install_folder: "/srv"
+bin_folder:
 
 py24:
   version: "{{ versions.py24 }}"

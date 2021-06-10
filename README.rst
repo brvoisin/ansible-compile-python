@@ -45,6 +45,7 @@ Role Variables
 * python_37: ``true/false`` (defaults to **false**)
 * pillow: ``true/false`` (defaults to **false**)
 * lxml: ``true/false`` (defaults to **false**)
+* bin_folder: a path to a folder in your ``$PATH``, for exemple ``/usr/bin`` (disabled by default)
 
 Dependencies
 ============

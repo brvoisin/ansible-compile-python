@@ -39,3 +39,11 @@
     dest='{{ base_install_folder }}/python{{ py_data.major_version }}'
     state=link
   when: should_install and not already_installed.stat.exists
+
+- name: "{{ py_data.version }} | Create symlink in bin folder"
+  become: true
+  file:
+    src={{ py_data.bin }}
+    dest='{{ bin_folder }}/python{{ py_data.major_version }}'
+    state=link
+  when: should_install and bin_folder
